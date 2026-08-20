@@ -1,15 +1,5 @@
-pipeline {
-  agent any
-    stages {
-    stage('compile') {
-      steps {
-        sh'javac HelloWorld.java'
-        }
-  }
-stage('run') {
-  step {
-    sh.java'HelloWorld'
-      }
-}
-}
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
 }
